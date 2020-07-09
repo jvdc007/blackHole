@@ -2,19 +2,32 @@
 <html lang="pt-br">
     <head>
         <meta charset="utf-8">
-        <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="./img/icon.png"/>
+        <link rel="stylesheet" href="./style/style.css">
         <title>O Buraco</title>
     </head>
-    <body>
+    <body onload="spannn('.span1')">
         <div id="part" class="flex container">
-            <div class="box b1"></div>
-            <div class="box b2"></div>
-            <div class="box b3"></div>
-            <div class="flex circle ring">
-                <div class="circle hole"></div>
+            <div class="span1">
+                <span>Clique várias vezes no centro do buraco...</span>
+            </div>
+            <div class="border flex blackHole">
+                <div class="box b1"></div>
+                <div class="box b2"></div>
+                <div class="box b3"></div>
+                <div class="flex circle ring">
+                    <div class="circle hole" onclick="opa()">
+                        <img class="circle" src="./img/mi.jpg">
+                    </div>
+                </div>
+            </div>
+            <div class="span2">
+                <span>Feliz dois meses, Emilly Fortes</span>
             </div>
         </div>
-        <script src="./particles.min.js"></script>
-        <script src="./particles.js"></script>
+        <audio src="./audio/Bag Raiders - Shooting Stars (Instrumental).mp3"></audio>
+        <script src="./js/particles.min.js"></script>
+        <script src="./js/particles.js"></script>
+        <script src="./js/scripts.js"></script>
     </body>
 </html>

@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yellowtail&display=swap');
+
 @keyframes rot{
     0% {
         transform: rotate(0deg);
@@ -14,12 +17,23 @@
         transform: rotate(-360deg);
     }
 }
+@keyframes spannn{
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
 *{
     margin: 0;
     padding: 0;
 }
 .container{
-    background-image: linear-gradient(45deg, #492d77, #132274);
+    /* background-image: linear-gradient(45deg, #492d77, #132274); */
+    background-image: url('../img/wallpaper.jpg');
+    background-size: cover;
     height: 100vh;
     width: 100%;
 }
@@ -27,6 +41,12 @@
     align-items: center;
     display: flex;
     justify-content: center;
+}
+.border{
+    border: 1px solid red;
+}
+.blackHole{
+    position: absolute;
 }
 .box{
     border: 1px solid rgba(128, 128, 128, 0.233);
@@ -48,7 +68,7 @@
     border-radius: 100%;
 }
 .ring{
-    animation: rot 5s linear infinite;
+    animation: rot 0.5s linear infinite;
     background-image: linear-gradient(#FF1493, gold);
     height: 140px;
     width: 140px;
@@ -56,21 +76,38 @@
     transition: all 3s;
 }
 .hole{
-    animation: rotInv 5s linear infinite;
     background-color: black;
     height: 130px;
     width: 130px;
     transition: all 3s;
 }
 .ring:hover{
-    animation: rot 0.5s linear infinite;
     height: 315px;
     width: 315px;
     transition: all 4s;
 }
 .hole:hover{
-    animation: rotInv 0.5s linear infinite;
     height: 310px;
     width: 310px;
     transition: all 4s;
+}
+img{
+    opacity: 0;
+    width: 100%;
+}
+.span1, .span2{
+    color: antiquewhite;
+    font-family: 'Roboto', sans-serif;
+}
+.span1{
+    font-size: 12pt;
+    position: absolute;
+    top: 10vh;
+}
+.span2{
+    display: none;
+    font-family: 'Yellowtail', cursive;
+    font-size: 40pt;
+    position: absolute;
+    bottom: 10vh;
 }
