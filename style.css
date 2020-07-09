@@ -1,0 +1,66 @@
+@keyframes rot{
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    background-image: linear-gradient(45deg, #492d77, #132274);
+    height: 100vh;
+    width: 100%;
+}
+.flex{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.box{
+    border: 1px solid rgba(128, 128, 128, 0.233);
+    height: 150px;
+    position: absolute;
+    transition: all 1s;
+    width: 150px;
+}
+.b1{
+    animation: rot 3s linear infinite;
+}
+.b2{
+    animation: rot 2.5s linear infinite;
+}
+.b3{
+    animation: rot 2s linear infinite;
+}
+.circle{
+    border-radius: 100%;
+}
+.ring{
+    animation: rot 5s infinite;
+    background-image: linear-gradient(#FF1493, gold);
+    height: 140px;
+    width: 140px;
+    position: absolute;
+    transition: all 3s;
+}
+.hole{
+    background-color: black;
+    height: 130px;
+    width: 130px;
+    transition: all 3s;
+}
+.ring:hover{
+    animation: rot 0.5s linear infinite;
+    height: 430px;
+    width: 430px;
+    transition: all 4s;
+}
+.hole:hover{
+    height: 425px;
+    width: 425px;
+    transition: all 4s;
+}
